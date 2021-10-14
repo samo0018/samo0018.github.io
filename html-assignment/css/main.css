@@ -1,16 +1,41 @@
-/* apply a BG color to the whole page (or the body tag) */
 
-body{
-    background-color:rgb(235, 205, 178);
-    /* changing the font family - always provide a list of fallbacks*/
+body {
+    background-color:rgb(248, 237, 228);
     font-family:'Helvetica', Arial, Helvetica, sans-serif;
     font-size: 18px;
 }
 
-h1, footer p{
-    background-color: whitesmoke;
+header, footer p {
+    background-color: rgb(243, 220, 220);
 }
 
-.site-title{
-    color:thistle;
+.site-title {
+    color:rgb(122, 73, 73);
+}
+
+#my-image {
+    box-shadow:0 2px 1px rgb(0, 0, 0)
+}
+
+li {
+    list-style-type: square;
+    }
+
+li:nth-child(2n-1){
+    background-color: rgb(243, 220, 220);
+}
+
+nav {
+    background-color: rgb(247, 215, 188);
+    border-style: solid;
+    border-color: rgb(204, 131, 131);
+}
+
+a {
+    color:rgb(122, 73, 73);
+    text-decoration: none;
+}
+
+a:hover{
+    background-color:peru;
 }
