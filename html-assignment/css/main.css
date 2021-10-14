@@ -1,7 +1,8 @@
 /* apply a BG color to the whole page (or the body tag) */
 
 body{
-    background-color:cadetblue;
+    background-color:rgb(235, 205, 178);
     /* changing the font family - always provide a list of fallbacks*/
-    font-family:'Helvetica', Arial, Helvetica, sans-serif,
+    font-family:'Helvetica', Arial, Helvetica, sans-serif;
+    font-size: 18px;
 }
