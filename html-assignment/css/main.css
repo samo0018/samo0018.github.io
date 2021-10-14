@@ -6,3 +6,7 @@ body{
     font-family:'Helvetica', Arial, Helvetica, sans-serif;
     font-size: 18px;
 }
+
+h1, footer p{
+    color: whitesmoke;
+}
