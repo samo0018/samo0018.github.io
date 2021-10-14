@@ -3,5 +3,5 @@
 body{
     background-color:cadetblue;
     /* changing the font family - always provide a list of fallbacks*/
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family:'Helvetica', Arial, Helvetica, sans-serif,
 }
