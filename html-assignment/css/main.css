@@ -10,3 +10,7 @@ body{
 h1, footer p{
     background-color: whitesmoke;
 }
+
+.site-title{
+    color:thistle;
+}
