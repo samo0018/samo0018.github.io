@@ -1,18 +1,20 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <!-- The head contains ivisible document information that the visitor will not be able to see, hence a good place to link my css file without clogging up the page -->
     <meta charset="utf-8">
     <title> Midterm </title>
     <link href="css/css.css" rel="stylesheet">
 </head>
 
 <body>
-
+<!-- The body is the actual content that will be visible on the page --> 
 
     <header class="header">
-        
+        <!-- The header contains the information at the very top of the page --> 
             <img class="header-image" src="images/banner.png" alt="money counter">
+            <!--- in the image tag, the src locates the correct image from the images folder -->
             <h1 class="header-text"> Money Laundering </h1>
 
     </header>
@@ -24,6 +26,7 @@
                     <li>
                         <a href="#">
                             <span> HOME </span>
+                            <!-- The span tag is non-specific and can be used to style any text -->
                         </a>
                     </li>
 
@@ -44,6 +47,7 @@
 
 
    <article class="bodycontent">
+        <!-- The article connects text, and in this case, the class function is used to style a specific part of this article -->
 
     <p class="life-starfish-title"> What is Money Laundering? </p>
     <img class="starfish-photo-wrap" src="images/photo.png" alt="money counter">
@@ -58,18 +62,20 @@
     <p class="subheadings"> Facts About Money Laundering in Canada </p>
 
     <ul class="fact-bullets">
+        <!-- The UL is an unordered list, where list items do not have a specific order to them --> 
         <li> The majority of organized crime groups and other criminals disguise their proceeds of crime </li>
         <li> Approximately 50% of the 176 Canadian organized crime groups [...] maintain international links </li>
         <li> Almost half of the groups with international links are involved in the cocaine market </li>
         <li> Criminals commonly use cryptocurrencies as a way to pay for mass-marketing fraud </li>
     </ul>
-
+<!-- When adding a hyperlink, the target _blank makes links open in another tab --> 
     <p> Source: <a href="https://cisc-scrc.gc.ca/media/2020/2020-09-28-eng.htm" target="_blank"> Criminal Intelligence Service Canada, 2020 </a> </p>
 
     <p class="subheadings"> Contact to learn more </p>
 
     <section>   
         <form action="index.html" method="get">
+            <!-- The form can be coded to collect information from the user --> 
             <p> 
                 <label for="name" class="form-text"> Your Name:</label>
                 <input id="name" type="text" name="name" class="form-box">
@@ -86,7 +92,7 @@
             </p>
 
             <p class="visit-starfish-text"> Poll: Should money laundering be more closely watched in Canada? </p>
-
+<!-- Radio means a button that can be checked or clicked, often being the default circle.. these buttons need to match the name with the attribute in order to work together --> 
                 <label for="yes"> Yes </label>
                 <input type="radio" id="yes" name="visit" value="yes">
 
@@ -103,6 +109,7 @@
     </section>
 
     <footer>
+        <!-- The footer contains the closing information at the very bottom of the page, like a copyright --> 
         <p> &copy; Clean Money </p>
     </footer>
  

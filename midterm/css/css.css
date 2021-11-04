@@ -44,26 +44,26 @@ html {
 nav {
    background-color: rgb(253, 238, 211);
    position: relative;
-   padding: 30px;
+   padding: 30px; /* padding is the interior spacing element and pushes content away from the edge */
 }
 
 #navbar{
    position: relative; 
    width: 510px;
-   padding: 1px 30px 30px 30px;
+   padding: 1px 30px 30px 30px; /* values from left to right: top, right, bottom & left */ 
 }
 
 nav li {
    position: relative;
-   float: left;
-   list-style: none;
+   float: left; /* float will make the listed elements sit next to each other horizontally */
+   list-style: none; /* removes the underlines from the hyperlink */ 
    bottom: 11px;
 }
 
 nav a {
    text-decoration: none;
    text-align: center;
-   margin: 25px;
+   margin: 25px; /* margin is the exterior spacing and works to push the other elements away */
 }
 
 nav li a span {
