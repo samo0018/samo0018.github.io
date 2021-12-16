@@ -1,11 +1,923 @@
-/**************************************
-            Font Imports
-**************************************/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-/**************************************
-            Font Styling
-**************************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
-/**************************************
-            Defaults
-**************************************/
+/*********************************************************************************************************
+                                                                Font Imports
+*********************************************************************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700;800&display=swap');
+
+/*********************************************************************************************************
+                                                                Font Styling
+*********************************************************************************************************/
+p, .grid-item {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+#navbar a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #c78c06;
+    text-decoration: none;
+}
+
+#navbar .home-nav {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 120px;
+    font-weight: 800;
+    color: white;
+}
+
+#welcome p {
+    color: white;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 65px;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+}
+
+.contact-button {
+    color: #c78c06;
+}
+
+h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+footer p {
+    color: #c78c06;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #c78c06;
+}
+
+/*********************************************************************************************************
+                                                         Defaults - Mobile First
+*********************************************************************************************************/
+body {
+    background-color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*********************************************************************************************************
+                                                                    Navigation
+*********************************************************************************************************/
+
+nav {
+    background-color: #222;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+#navbar {
+    margin: center;
+    background-color: #222;
+    width: 100%;
+}
+
+#navbar-yellow {
+    background-color: #c78c06;
+    padding-bottom: 10px;
+}
+
+nav li {
+    text-align: center;
+    padding: 20px;
+}
+
+.searchbar {
+    background-color: #222;
+}
+
+.search {
+    width: 90%;
+    height: 36px;
+}
+
+.searchbar button {
+    background-color: #222;
+    border: 2px solid #c78c06;
+    height: 42px;
+    width: 48px;
+    position: absolute;
+}
+
+.searchbar button i {
+    color: #c78c06;
+    font-size: 18px;
+}
+
+/*********************************************************************************************************
+                                                                      Welcome
+*********************************************************************************************************/
+#banner-img {
+    width: 100%;
+    position: relative;
+}
+
+#overlay {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 500px;
+    text-align: left;
+}
+
+#overlay h1 {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    line-height: 1.5;
+    margin-left: 20px;
+    font-size: 70px;
+}
+
+#overlay p {
+    padding-bottom: 20px;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.connect-button {
+    background-color: #c78c06;
+    height: 90px;
+    width: 300px;
+    font-size: 30px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+/*********************************************************************************************************
+                                                                    About Us
+*********************************************************************************************************/
+#about {
+    background-color: #ffe6ac;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+#about-img {
+    width: 100%;
+}
+
+#about h2 {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+#about p {
+    line-height: 1.5;
+    margin-top: 1em; 
+    margin-bottom: 1em;
+    box-sizing: border-box;
+    margin-left: -10px;
+}
+
+/*********************************************************************************************************
+                                                Our Services / Digital Transformation 
+*********************************************************************************************************/
+.services {
+    background-color: white;
+}
+
+#digi-img {
+    width: 100%;
+}
+
+.services h2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#digital-transformation {
+    background-color: #ffe6ac;
+}
+
+#digital-transformation h3, p, #plans-button {
+    box-sizing: border-box;
+    padding: 20px;
+    line-height: 1.5;
+    padding-bottom: 10px;
+}
+
+#plans-button {
+    position: relative;
+    background-color: #222;
+    box-sizing: border-box;
+    padding: 15px;
+    margin-left: 20px;
+    margin-bottom: 20px; 
+    margin-top: 5px;
+    color: white;
+    height: 130px;
+    width: 360px;
+    font-size: 30px;
+}
+
+/*********************************************************************************************************
+                                                                Marketing
+*********************************************************************************************************/
+#marketing-img {
+    width: 100%;
+}
+
+.services h2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#marketing {
+    background-color: #ffe6ac;
+}
+
+#marketing h3, p, #plans-button {
+    box-sizing: border-box;
+    padding: 20px;
+    line-height: 1.5;
+    padding-bottom: 10px;
+}
+
+/*********************************************************************************************************
+                                                            Video Production
+*********************************************************************************************************/
+#video-img {
+    width: 100%;
+}
+
+.services h2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#video-production {
+    background-color: #ffe6ac;
+}
+
+#video-production h3, p, #plans-button {
+    box-sizing: border-box;
+    padding: 20px;
+    line-height: 1.5;
+    padding-bottom: 10px;
+}
+
+/*********************************************************************************************************
+                                                       Web Development 
+*********************************************************************************************************/
+#web-img {
+    width: 100%;
+}
+
+.services h2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#web-dev {
+    background-color: #ffe6ac;
+}
+
+#web-dev h3, p, #plans-button {
+    box-sizing: border-box;
+    padding: 20px;
+    line-height: 1.5;
+    padding-bottom: 10px;
+}
+
+/*********************************************************************************************************
+                                                                        Print
+*********************************************************************************************************/
+#print-img {
+    width: 100%;
+}
+
+.services h2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#print {
+    background-color: #ffe6ac;
+}
+
+#print h3, p, #plans-button {
+    box-sizing: border-box;
+    padding: 20px;
+    line-height: 1.5;
+    padding-bottom: 10px;
+}
+
+/*********************************************************************************************************
+                                                                Our Vision 
+*********************************************************************************************************/
+#vision-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    position: relative;
+}
+
+#vision {
+    position: absolute;
+    width: 100%;
+    top: 7200px;
+    margin: 20px;
+    color: white;
+}
+
+#vision p {
+   margin-left: -15px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   font-size: 16px;
+}
+
+#learn-more {
+    position: relative;
+    background-color: rgba(2, 2, 2, 0.6);
+    border: 2px solid #c78c06;
+    box-sizing: border-box;
+    padding: 15px;
+    margin-bottom: 20px; 
+    margin-top: 5px;
+    color: white;
+    height: 100px;
+    width: 360px;
+    font-size: 30px;
+}
+
+/*********************************************************************************************************
+                                                                    Our Team
+*********************************************************************************************************/
+#our-team {
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#john-img {
+    width: 100%;
+}
+
+#john {
+    background-color: #ffe6ac;
+    padding-bottom: 30px;
+}
+
+#john h3 {
+    box-sizing: border-box;
+    padding: 20px 20px 10px 20px;
+}
+
+#john h5 {
+    box-sizing: border-box;
+    padding: 20px 20px 10px 20px;
+    margin-top: -20px;
+}
+
+#linebreak {
+    border: 2px solid #c78c06;
+    width: 95%;
+}
+
+#bob-img {
+    width: 100%;
+}
+
+#bob {
+    background-color: #ffe6ac;
+    padding-bottom: 30px;
+}
+
+#bob h3 {
+    box-sizing: border-box;
+    padding: 20px 20px 10px 20px;
+}
+
+#bob h5 {
+    box-sizing: border-box;
+    padding: 20px 20px 10px 20px;
+    margin-top: -20px;
+}
+
+/*********************************************************************************************************
+                                                            Contact Us 
+*********************************************************************************************************/
+#contact-us {
+    background-color: white;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#contact-us h2, h3 {
+    padding: 30px;
+}
+
+#contact-form {
+    background-color: white;
+    padding-bottom: 20px;
+}
+
+ .form-box {
+     height: 50px;
+     width: 100%;
+     position: relative;
+ }
+
+ .message-box {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    margin: 5px 0;
+    padding-bottom: 1px;
+ }
+
+ .contact-button {
+     background-color: #222;
+     height: 70px;
+     width: 130px;
+     font-size: 30px;
+     margin-left: 10px;
+     margin-bottom: 20px;
+     font-size: 40px;
+ }
+
+ /*********************************************************************************************************
+                                                                    Hours
+*********************************************************************************************************/
+#hours {
+    background-color: white;
+}
+
+.container {
+    box-sizing: border-box;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 80px 80px 80px; 
+}
+
+.grid-item {
+    border: 1px solid black;
+    padding-top: 30px;
+}
+
+.container div:nth-child(-n+2) {
+    background-color: #ffe6ac;
+    text-align: center;
+}
+.container div:nth-child(3) {
+    background-color: white;
+    padding-left: 20px;
+}
+.container div:nth-child(4) {
+    background-color: white;
+    padding-left: 20px;
+}
+.container div:nth-child(5) {
+    background-color: white;
+    padding-left: 20px;
+}
+.container div:nth-child(6) {
+    background-color: white;
+    padding-left: 20px;
+}
+
+/*********************************************************************************************************
+                                                                    Location
+*********************************************************************************************************/
+#location {
+background-color: white;
+width: 100%;
+}
+
+#googlemapsEmbed {
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+/*********************************************************************************************************
+                                                                 Footer
+*********************************************************************************************************/
+footer {
+    background-color: #222;
+    box-sizing: border-box;
+    padding: 20px;
+    padding-top: 30px;
+}
+/*********************************************************************************************************
+                                                        Defaults - For Desktop
+*********************************************************************************************************/
+
+@media screen and (min-width: 760px) {
+
+    nav {
+        display: flex;
+    }
+
+    #navbar {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+        background-color: #222;
+        height: 170px;
+    }
+
+    nav li {
+        display: flex;
+        float: left;
+    }
+
+    #navbar-yellow {
+        display: flex;
+        margin-right: -50px;
+        padding-bottom: -50px;
+        background-color: #222;
+    }
+
+    .home-nav {
+        flex-wrap: wrap;
+        padding: 20px 20px 20px 20px;
+        margin-left: 110px;
+        background-color: #c78c06;
+    }
+
+    .searchbar {
+        background-color: steelblue;
+        padding-right: 40px;
+    }
+
+    .search {
+        width: relative;
+        height: 36px;
+    }
+
+    #banner-img {
+        height: 650px;
+        object-fit: cover;
+    }
+
+    #overlay {
+        position: absolute;
+        width: 1100px;
+        height: auto;
+        margin: 50px 50px 50px 50px;
+        background-color: rgba(0, 0, 0, 0.6);
+        top: 200px;
+        text-align: left;
+    }
+
+    #overlay h1 {
+        font-size: 80px;
+    }
+
+    #overlay p {
+        font-size: 18px;
+    }
+
+    .connect-button {
+        background-color: #c78c06;
+        height: 90px;
+        width: 270px;
+        font-size: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    #about-img {
+        float: left;
+        width: 500px;
+        padding: 20px;
+        padding-left: 70px;
+    }
+    #about {
+        padding-bottom: 70px;
+    }
+
+    #about h2 {
+        font-size: 40px;
+        margin-bottom: -45px;
+    }
+
+    #about p {
+        font-size: 13px;
+        margin-bottom: -30px;
+    }
+
+    #services {
+        background-color: white;
+        width: 1200px;
+        font-size: 40px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .services {
+        width: 1200px;
+        background-color: white;
+        flex-direction: row;
+    }
+
+    .services p {
+        font-size: 16px;
+    }
+
+    .services h3 {
+        font-size: 30px;
+    }
+
+    #plans-button {
+        margin: 10px;
+        width: 95%;
+        height: 100px;
+        font-size: 25px;
+    }
+
+    #digital-transformation {
+        width: 580px;
+        float: left;
+        margin: 10px;
+    }
+
+    #marketing {
+        width: 580px;
+        float: left;
+        margin: 10px;
+    }
+
+    #video-production {
+       width: 380px;
+       float: left;
+       margin: 10px;
+    }
+
+    #web-dev {
+        width: 380px;
+        float: left;
+        margin: 10px;
+    }
+
+    #print {
+        width: 380px;
+        float: left;
+        margin: 10px;
+    }
+
+    #vision-img, #vision {
+        order: 6;
+    }
+
+    #vision p {
+        width: 1200px;
+    }
+
+    #vision-img {
+        width: 1400px;
+        height: 300px;
+        margin-left: -100px;
+    }
+
+    #vision {
+        top: 2730px;
+    }
+
+    #vision h4 {
+        font-size: 30px;
+    }
+
+    #learn-more {
+        height: 100px;
+        width: 260px;
+        margin-top: -15px;
+        font-size: 20px;
+    }
+
+    #our-team {
+        width: 1200px;
+        font-size: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    #john-img {
+        width: 600px;
+        float: left;
+        display: flex;
+    }
+
+    #jd-desktop, #linebreak {
+        width: 600px;
+        float: left;
+    }
+    
+    #john {
+        height: 370px;
+    }
+
+    #john h3 {
+        padding-bottom: 20px;
+        font-size: 30px;
+    }
+
+    #john h5 {
+        font-size: 15px;
+    }
+
+    #linebreak {
+        width: 580px;
+        margin-left: 10px;
+    }
+
+    #john p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #bob-img {
+        width: 600px;
+        float: right;
+        display: flex;
+    }
+
+    #bob {
+        height: 370px;
+    }
+
+    #bob-desktop, #linebreak {
+        width: 600px;
+        float: left;
+    }
+
+    #bob h3 {
+        padding-bottom: 20px;
+        font-size: 30px;
+    }
+
+    #bob h5 {
+        font-size: 15px;
+    }
+
+    #linebreak {
+        width: 580px;
+        margin-left: 10px;
+    }
+
+    #bob p {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    #contact-us {
+        padding-top: -10px;
+        padding-bottom: -10px;
+    }
+
+    #contact-us h2 {
+        font-size: 50px;
+        margin-left: -30px;
+    }
+
+    #contact-us h3 {
+        font-size: 30px;
+        margin-left: -30px;
+        margin-bottom: -20px;
+    }
+
+    #contact-form {
+        background-color: white;
+        width: 580px;
+        flex: left;
+    }
+
+    .form-text {
+        font-size: 20px;
+        margin-left: -20px;
+    }
+
+    .form-box {
+        font-size: 20px;
+        width: 560px;
+        margin-left: -20px;
+    }
+
+    .message-box {
+        width: 560px;
+        margin-left: -20px;
+    }
+
+    .contact-button {
+        margin-left: -20px;
+        height: 50px;
+        width: 100px;
+        font-size: 30px;
+    }
+
+    #location {
+        position: absolute;
+        top: 4010px;
+        left: 750px;
+    }
+
+    #location h3 {
+        font-size: 30px;
+    }
+
+    #hours h3 {
+        font-size: 30px;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    footer {
+        margin-top: 30px;
+        margin-left: -100px;
+        margin-right: -100px;
+    }
+
+    footer p {
+        font-size: 15px;
+        padding-left: 85px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+}

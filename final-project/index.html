@@ -16,35 +16,41 @@
 
         <nav>
             <div id="navbar">
-            <img src="images/logo.png" alt="Star Logo">
+                <div id="navbar-yellow">
+                    <img id="star-logo" src="images/logo.png" alt="Star Logo">
+                    <ul>
+                        <li> <a href="#welcome" class="home-nav" > Home </a> </li>
+                    </ul>
+                </div>
+
             <ul>
-                <li> <a href="#welcome"> Home </a> </li>
                 <li> <a href="#about"> About Us </a> </li>
                 <li> <a href="#services"> Services </a> </li>
                 <li> <a href="#team"> Team </a> </li>
                 <li> <a href="#contact-form"> Contact </a> </li>
             </ul>
 
-            <form id="searchbar">
-                <input type="search" id="query" name="q" placeholder="Search">
+            <div class="searchbar">
+                <input class="search" id="query" name="q" placeholder="Search">
                 <button type="button" class="searchbar-button"> 
                     <i class="icon icon-zoom"> </i>
                 </button>
-            </form>
             </div>
+
+            </div>
+
         </nav>
 
         <!--        WELCOME      -->
 
-        <img src="images/main-banner.jpg" alt="Interior Workspace Banner">
-
         <div id="welcome">
+            <img id="banner-img" src="images/main-banner.jpg" alt="Interior Workspace Banner">
                 <div id="overlay">
                     <h1> Welcome to Three Star Media </h1>
                     <p>
-                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet magna rhoncus, auctor nulla gravida, dictum sapien. Donec vitae auctor nunc. Nunc sed odio sit amet neque iaculis ultrices sed non velit. Duis tortor libero, vestibulum et maximus a, viverra sed eros. 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam convallis libero a ex consectetur varius. Nulla iaculis, lectus id varius ornare, nulla est iaculis ante, egestas scelerisque nisl leo in sem. Aenean semper viverra blandit. Proin viverra ipsum sem, a consectetur nisi commodo non. Morbi sit amet ex id arcu laoreet elementum.  
                     </p>
-                    <button type="button" class="connect-button"> Connect with us </button>
+                    <button type="button" class="connect-button"> Connect with us <i class="icon icon-right"> </i> </button>
                 </div>
         </div>
 
@@ -53,74 +59,75 @@
         <!--        ABOUT US         -->
     <div id="about">
 
-        <img src="images/about-us.jpg" alt="Ping Pong Table">
-            <h1> About Us </h1>
+        <img id="about-img" src="images/about-us.jpg" alt="Ping Pong Table">
+            <h2> About Us </h2>
             <p> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet magna rhoncus, auctor nulla gravida, dictum sapien. Donec vitae auctor nunc. Nunc sed odio sit amet neque iaculis ultrices sed non velit. Duis tortor libero, vestibulum et maximus a, viverra sed eros.  
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam convallis libero a ex consectetur varius. Nulla iaculis, lectus id varius ornare, nulla est iaculis ante, egestas scelerisque nisl leo in sem. Aenean semper viverra blandit. Proin viverra ipsum sem, a consectetur nisi commodo non. Morbi sit amet ex id arcu laoreet elementum. Quisque non pellentesque odio. Suspendisse ut vulputate tortor. 
             </p>
             <p> 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet magna rhoncus, auctor nulla gravida, dictum sapien. Donec vitae auctor nunc. Nunc sed odio sit amet neque iaculis ultrices sed non velit. Duis tortor libero, vestibulum et maximus a, viverra sed eros.  
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet magna rhoncus, auctor nulla gravida, dictum sapien. Donec vitae auctor nunc. Nunc sed odio sit amet neque iaculis ultrices sed non velit. Morbi sit amet ex id arcu laoreet elementum. Quisque non pellentesque odio. Suspendisse ut vulputate tortor.
             </p>
     </div>
 
         <!--        OUR SERVICES         -->
 
-    <div id="services"> 
+    <div class="services"> 
 
-        <h1> Our Services </h1>
+        <h2 id="services"> Our Services </h2>
+
 
         <div id="digital-transformation">
-            <img src="images/digital.jpg" alt="Computer and Phone">
-            <h2> Digital Transformation </h2>
+            <img id="digi-img" src="images/digital.jpg" alt="Computer and Phone">
+            <h3> Digital Transformation </h3>
             <p> 
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet magna rhoncus, auctor nulla gravida, dictum sapien. Donec vitae auctor nunc. Nunc sed odio sit amet neque iaculis ultrices sed non velit. Duis tortor libero, vestibulum et maximus a, viverra sed eros.  
             </p>
-            <button type="button" class="plans-button"> Digital Plans </button>
+            <button type="button" id="plans-button"> Digital Plans <i class="icon icon-right"></i> </button>
         </div>
 
         <div id="marketing">
-            <img src="images/marketing.jpg" alt="Computer">
-            <h2> Marketing </h2>
+            <img id="marketing-img" src="images/marketing.jpg" alt="Computer">
+            <h3> Marketing </h3>
             <p> 
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet magna rhoncus, auctor nulla gravida, dictum sapien. Donec vitae auctor nunc. Nunc sed odio sit amet neque iaculis ultrices sed non velit. Duis tortor libero, vestibulum et maximus a, viverra sed eros.  
             </p>
-            <button type="button" class="plans-button"> Marketing Plans </button>
+            <button type="button" id="plans-button"> Marketing Plans <i class="icon icon-right"></i></button>
         </div>
 
         <div id="video-production">
-            <img src="images/video.jpg" alt="Phone">
-            <h2> Video Production </h2>
+            <img id="video-img" src="images/video.jpg" alt="Phone">
+            <h3> Video Production </h3>
             <p> 
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet magna rhoncus, auctor nulla gravida, dictum sapien. Donec vitae auctor nunc. Nunc sed odio sit amet neque iaculis ultrices sed non velit. Duis tortor libero, vestibulum et maximus a, viverra sed eros.  
             </p>
-            <button type="button" class="plans-button"> Video Plans </button>
+            <button type="button" id="plans-button"> Video Plans <i class="icon icon-right"></i></button>
         </div>
 
         <div id="web-dev">
-            <img src="images/web.jpg" alt="Phone and Pen">
-            <h2> Web Development </h2>
+            <img id="web-img" src="images/web.jpg" alt="Phone and Pen">
+            <h3> Web Development </h3>
             <p> 
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet magna rhoncus, auctor nulla gravida, dictum sapien. Donec vitae auctor nunc. Nunc sed odio sit amet neque iaculis ultrices sed non velit. Duis tortor libero, vestibulum et maximus a, viverra sed eros.  
             </p>
-            <button type="button" class="plans-button"> Web Plans </button>
+            <button type="button" id="plans-button"> Web Plans <i class="icon icon-right"></i></button>
         </div>
 
         <div id="print">
-            <img src="images/print.jpg" alt="Newspaper Boxes">
-            <h2> Print </h2>
+            <img id="print-img" src="images/print.jpg" alt="Newspaper Boxes">
+            <h3> Print </h3>
             <p> 
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet magna rhoncus, auctor nulla gravida, dictum sapien. Donec vitae auctor nunc. Nunc sed odio sit amet neque iaculis ultrices sed non velit. Duis tortor libero, vestibulum et maximus a, viverra sed eros.  
             </p>
-            <button type="button" class="plans-button"> Print Plans </button>
+            <button type="button" id="plans-button"> Print Plans <i class="icon icon-right"></i></button>
         </div>
 
+        <img id="vision-img" src="images/vision.jpg" alt="Origami Boats">
         <div id="vision">
-            <img src="images/vision.jpg" alt="Origami Boats">
-            <h2> Our Vision </h2>
+            <h4> Our Vision </h4>
             <p> 
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet magna rhoncus, auctor nulla gravida, dictum sapien. Donec vitae auctor nunc. Nunc sed odio sit amet neque iaculis ultrices sed non velit. Duis tortor libero, vestibulum et maximus a, viverra sed eros.  
             </p>
-            <button type="button" class="learn-more"> Learn More </button>
+            <button type="button" id="learn-more"> Learn More <i class="icon icon-right"></i></button>
         </div>
 
     </div>
@@ -128,21 +135,23 @@
         <!--        OUR TEAM         -->
 
     <div id="team"> 
-        <h1> Our Team </h1>
+        <h2 id="our-team"> Our Team </h2>
 
         <div id="john">
-            <img src="images/john.jpg" alt="John Doe">
-            <h2> John Doe </h2>
-            <h4> CEO and Co-owner </h4>
+            <img id="john-img" src="images/john.jpg" alt="John Doe">
+            <h3 id=jd-desktop > John Doe </h3>
+            <h5 id=jd-desktop > CEO and Co-owner </h5>
+            <hr id="linebreak">
             <p> 
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet magna rhoncus, auctor nulla gravida, dictum sapien. Donec vitae auctor nunc. Nunc sed odio sit amet neque iaculis ultrices sed non velit. Duis tortor libero, vestibulum et maximus a, viverra sed eros. 
             </p>
         </div>
 
         <div id="bob">
-            <img src="images/bob.jpg" alt="Bob Rite">
-            <h2> Bob Rite </h2>
-            <h4> CFO and Co-owner </h4>
+            <img id="bob-img" src="images/bob.jpg" alt="Bob Rite">
+            <h3 id=bob-desktop > Bob Rite </h3>
+            <h5 id=bob-desktop > CFO and Co-owner </h5>
+            <hr id="linebreak">
             <p> 
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet magna rhoncus, auctor nulla gravida, dictum sapien. Donec vitae auctor nunc. Nunc sed odio sit amet neque iaculis ultrices sed non velit. Duis tortor libero, vestibulum et maximus a, viverra sed eros. 
             </p>
@@ -152,23 +161,24 @@
         <!--        CONTACT      -->
 
         <section>   
-            <div id="contact-form">
-                <h2> Send us a message </h2>
+            <div id="contact-us">
+                <h2> Contact Us </h2>
+                <h3> Send us a message </h3>
             </div>
         
-            <form action="index.html" method="get">
+            <form id="contact-form" action="index.html" method="get">
                 <p> 
                     <label for="name" class="form-text"> Full Name:</label>
                     <input id="name" type="text" name="name" class="form-box">
                 </p>
     
                 <p> 
-                    <label for="email"> Email:</label>
+                    <label for="email" class="form-text"> Email:</label>
                     <input id="email" type="text" name="email" class="form-box">
                 </p>
     
                 <p>
-                    <label for="message"> Message:</label>
+                    <label for="message" class="form-text"> Message:</label>
                     <input id="message" type="text" name="message" class="message-box">
                 </p>
                 
@@ -180,7 +190,7 @@
 
 
         <div id="hours">
-            <h2> Hours of operation </h2>
+            <h3> Hours of operation </h3>
             
             <div class="container">
                 <div class="grid-item"> Days </div>
@@ -193,10 +203,13 @@
 
         </div>
 
+        <div id="location">
+            <h3> Location </h3>
 
-        <h2> Location </h2>
-        <div id="googlemapsEmbed">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9445518045127!2d-75.75712548434204!3d45.34993154908169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1638400338053!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div id="googlemapsEmbed">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9445518045127!2d-75.75712548434204!3d45.34993154908169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1638400338053!5m2!1sen!2sca" width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
         </div>
 
         <footer>
